@@ -1,0 +1,35 @@
+#!/bin/bash
+
+#SBATCH --job-name=matmul_benchmark # Job name
+#SBATCH --output=matmul_data.out # Standard output file
+#SBATCH --error=matmul_error.out # Standard error file
+#SBATCH --partition=amd20-v100 # Partition or queue name
+#SBATCH --nodes=1 # Number of nodes
+#SBATCH --ntasks=1 # Number of tasks
+#SBATCH --cpus-per-task=48 # Number of CPU cores per task
+#SBATCH --gpus=1 # Number of GPUs to use in this example
+#SBATCH --exclusive # Request exlusive use of the resources
+#SBATCH --time=0-01:00:00 # Maximum runtime (D-HH:MM:SS)
+#SBATCH --mail-type=END # Send email at job completion
+#SBATCH --mail-user=wsands@udel.edu # Email address for notifications
+
+# Load packages
+module load Julia/1.9.3-linux-x86_64
+
+# Create the matrix sizes to use in the runs
+N_list="256 512 1024 2048 4096 8192"
+
+# Use at least 10 repetitions for each case
+num_reps=20
+
+# Alternate between the CPU and GPU examples
+for N in $N_list
+do
+	printf "\n"
+    julia matmul_cpu.jl -M=$N -N=$N -s=$num_reps 
+	printf "\n"
+    julia matmul_gpu.jl -M=$N -N=$N -s=$num_reps
+	printf "\n"
+done
+
+

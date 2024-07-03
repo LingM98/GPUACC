@@ -50,7 +50,7 @@ BenchmarkTools.DEFAULT_PARAMETERS.seconds = 120
 # Alternatively, we could have used interpolation here.
 const A = randn(Float64, (M, N))
 
-# Perform the QR factorization A = USV'
+# Perform the SVD factorization A = USV'
 benchmark_data = @benchmark svd(A)
 
 # Times are in nano-seconds (ns) which are converted to seconds

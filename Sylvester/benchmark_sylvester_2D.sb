@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#SBATCH --job-name=sylvester_benchmark # Job name
+#SBATCH --output=sylvester_data.out # Standard output file
+#SBATCH --error=sylvester_error.out # Standard error file
+#SBATCH --partition=amd20-v100 # Partition or queue name
+#SBATCH --nodes=1 # Number of nodes
+#SBATCH --ntasks=1 # Number of tasks
+#SBATCH --cpus-per-task=48 # Number of CPU cores per task
+#SBATCH --gpus=0 # Number of GPUs to use in this example
+#SBATCH --exclusive # Request exlusive use of the resources
+#SBATCH --mem=32GB
+#SBATCH --time=0-01:00:00 # Maximum runtime (D-HH:MM:SS)
+#SBATCH --mail-type=END # Send email at job completion
+#SBATCH --mail-user=wsands@udel.edu # Email address for notifications
+
+# Move to the directory of the code
+cd ~/Documents/GPUACC/Sylvester/
+
+# Load the necessary modules (Julia and CUDA are already loaded...)
+
+# Create the matrix sizes to use in the runs
+N_list="128 256 512 1024 2048 4096 8192"
+
+for N in $N_list
+do
+	printf "\n"
+    julia sylvester_cpu_2D.jl --Nx $N --Ny $N --rel_eps 1e-2
+	printf "\n"
+done
+
+

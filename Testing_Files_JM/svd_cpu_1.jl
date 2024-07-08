@@ -43,7 +43,7 @@ println("Number of BLAS threads:", BLAS.get_num_threads())
 # Reset defaults for the number of samples and the total time for
 # the benchmarking process
 BenchmarkTools.DEFAULT_PARAMETERS.samples = s
-BenchmarkTools.DEFAULT_PARAMETERS.seconds = 120
+BenchmarkTools.DEFAULT_PARAMETERS.seconds = 1000
 
 # Setup the matrices for the operation
 # We declare these as "cost" so they are not treated as globals

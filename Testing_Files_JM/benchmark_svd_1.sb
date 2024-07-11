@@ -7,12 +7,12 @@
 #SBATCH --qos=regular # Partition or queue name
 #SBATCH --nodes=1 # Number of nodes
 #SBATCH --ntasks=1 # Number of tasks
-#SBATCH --cpus-per-task=64 # Number of CPU cores per task
+#SBATCH --cpus-per-task=48 # Number of CPU cores per task
 #SBATCH --constraint=gpu
 #SBATCH --gpus=1 # Number of GPUs to use in this example
 #SBATCH --exclusive # Request exlusive use of the resources
 #SBATCH --mem=32GB
-#SBATCH --time=0-01:00:00 # Maximum runtime (D-HH:MM:SS)
+#SBATCH --time=24:00:00 # Maximum runtime (D-HH:MM:SS)
 #SBATCH --mail-type=END # Send email at job completion
 #SBATCH --mail-user=lingm@udel.edu # Email address for notifications
 

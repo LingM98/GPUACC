@@ -5,22 +5,22 @@ Options used for SVD (CPU):
   s  =  20
 Number of BLAS threads:64
 CPU results:
-Minimum (s): 3.06882780e-02
-Maximum (s): 3.16419250e-02
-Median (s): 3.09640275e-02
-Mean (s): 3.10405390e-02
-Standard deviation (s): 2.53609701e-04
+Minimum (s): 2.98724860e-02
+Maximum (s): 3.10226150e-02
+Median (s): 3.01287775e-02
+Mean (s): 3.01843047e-02
+Standard deviation (s): 2.44820956e-04
 
 Options used for SVD (GPU):
   M  =  256
   N  =  256
   s  =  20
 GPU results:
-Minimum (s): 1.65652640e-02
-Maximum (s): 1.67492710e-02
-Median (s): 1.66125965e-02
-Mean (s): 1.66134255e-02
-Standard deviation (s): 4.23221068e-05
+Minimum (s): 1.61221470e-02
+Maximum (s): 1.63297200e-02
+Median (s): 1.61411385e-02
+Mean (s): 1.61569089e-02
+Standard deviation (s): 4.91411573e-05
 
 
 Options used for SVD (CPU):
@@ -29,22 +29,22 @@ Options used for SVD (CPU):
   s  =  20
 Number of BLAS threads:64
 CPU results:
-Minimum (s): 1.13960062e-01
-Maximum (s): 1.20730287e-01
-Median (s): 1.17179082e-01
-Mean (s): 1.17042129e-01
-Standard deviation (s): 1.91362918e-03
+Minimum (s): 1.14028404e-01
+Maximum (s): 1.20216397e-01
+Median (s): 1.16246417e-01
+Mean (s): 1.16546546e-01
+Standard deviation (s): 2.04022867e-03
 
 Options used for SVD (GPU):
   M  =  512
   N  =  512
   s  =  20
 GPU results:
-Minimum (s): 4.80733210e-02
-Maximum (s): 5.34518310e-02
-Median (s): 4.91120210e-02
-Mean (s): 4.92200154e-02
-Standard deviation (s): 1.48720016e-03
+Minimum (s): 4.85362990e-02
+Maximum (s): 5.43333430e-02
+Median (s): 4.88241630e-02
+Mean (s): 4.96645691e-02
+Standard deviation (s): 1.59403023e-03
 
 
 Options used for SVD (CPU):
@@ -53,21 +53,92 @@ Options used for SVD (CPU):
   s  =  20
 Number of BLAS threads:64
 CPU results:
-Minimum (s): 3.47120649e-01
-Maximum (s): 3.68272581e-01
-Median (s): 3.53181029e-01
-Mean (s): 3.53838671e-01
-Standard deviation (s): 4.99024705e-03
+Minimum (s): 3.43428048e-01
+Maximum (s): 3.67489028e-01
+Median (s): 3.48031150e-01
+Mean (s): 3.49858486e-01
+Standard deviation (s): 5.52662528e-03
 
 Options used for SVD (GPU):
   M  =  1024
   N  =  1024
   s  =  20
 GPU results:
-Minimum (s): 1.54060917e-01
-Maximum (s): 1.61202049e-01
-Median (s): 1.56656386e-01
-Mean (s): 1.56937422e-01
-Standard deviation (s): 2.05236581e-03
+Minimum (s): 1.53752829e-01
+Maximum (s): 1.60836582e-01
+Median (s): 1.56495552e-01
+Mean (s): 1.56699556e-01
+Standard deviation (s): 2.01273428e-03
 
+
+Options used for SVD (CPU):
+  M  =  2048
+  N  =  2048
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 1.92220689e+00
+Maximum (s): 2.02685283e+00
+Median (s): 1.95379817e+00
+Mean (s): 1.95543759e+00
+Standard deviation (s): 2.42323204e-02
+
+Options used for SVD (GPU):
+  M  =  2048
+  N  =  2048
+  s  =  20
+GPU results:
+Minimum (s): 6.70150864e-01
+Maximum (s): 6.76533981e-01
+Median (s): 6.70993478e-01
+Mean (s): 6.71649554e-01
+Standard deviation (s): 1.74005816e-03
+
+
+Options used for SVD (CPU):
+  M  =  4096
+  N  =  4096
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 1.71802566e+01
+Maximum (s): 1.75619605e+01
+Median (s): 1.73977077e+01
+Mean (s): 1.74050019e+01
+Standard deviation (s): 1.04742091e-01
+
+Options used for SVD (GPU):
+  M  =  4096
+  N  =  4096
+  s  =  20
+GPU results:
+Minimum (s): 4.35337453e+00
+Maximum (s): 4.38977030e+00
+Median (s): 4.36259397e+00
+Mean (s): 4.36332936e+00
+Standard deviation (s): 6.84659447e-03
+
+
+Options used for SVD (CPU):
+  M  =  8192
+  N  =  8192
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 1.86512145e+02
+Maximum (s): 1.89173803e+02
+Median (s): 1.87759924e+02
+Mean (s): 1.87648346e+02
+Standard deviation (s): 9.57737895e-01
+
+Options used for SVD (GPU):
+  M  =  8192
+  N  =  8192
+  s  =  20
+GPU results:
+Minimum (s): 2.96861453e+01
+Maximum (s): 2.99262022e+01
+Median (s): 2.97177395e+01
+Mean (s): 2.97505557e+01
+Standard deviation (s): 9.90660467e-02
 

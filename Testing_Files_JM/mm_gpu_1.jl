@@ -1,5 +1,5 @@
 # This script tests a GPU Matrix Multiplication.
-# It benchmarks the factorization A = USV', where A is an M x N matrix
+# It benchmarks the A*A', where A is an M x N matrix
 
 using ArgParse
 using Printf

@@ -27,7 +27,7 @@ end
 # Parse the arguments and print them to the command line
 parsed_args = parse_args(s)
 
-println("Options used for SVD (CPU):")
+println("Options used for QR (CPU):")
 for (arg,val) in parsed_args
     println("  $arg  =  $val")
 end

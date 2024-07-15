@@ -1,10 +1,10 @@
-# This script tests a GPU Matrix Multiplication.
-# It benchmarks the A*A', where A is an M x N matrix
+# This script tests a CPU Matrix Multiplication.
+# It benchmarks AxA', where A is an M x N matrix
 
 using ArgParse
 using Printf
 using BenchmarkTools
-using CUDA
+using LinearAlgebra
 
 # Retrieve the command line arguments
 s = ArgParseSettings()
@@ -15,7 +15,7 @@ s = ArgParseSettings()
         arg_type = Int
         default = 256
     "-N", "--N"
-        help = "Number of columns in A";
+        help = "Number of columns in B";
         arg_type = Int
         default = 256
     "-s", "--s"
@@ -27,7 +27,7 @@ end
 # Parse the arguments and print them to the command line
 parsed_args = parse_args(s)
 
-println("Options used for MM (GPU):")
+println("Options used for MM (CPU):")
 for (arg,val) in parsed_args
     println("  $arg  =  $val")
 end
@@ -37,24 +37,27 @@ M = parsed_args["M"]
 N = parsed_args["N"]
 s = parsed_args["s"]
 
-# Reset defaults for the number of samples and the total time
-# spent for the benchmarking process
+# Get the number of BLAS threads being used
+println("Number of BLAS threads:", BLAS.get_num_threads())
+
+# Reset defaults for the number of samples and the total time for
+# the benchmarking process
 BenchmarkTools.DEFAULT_PARAMETERS.samples = s
-BenchmarkTools.DEFAULT_PARAMETERS.seconds = 120
+BenchmarkTools.DEFAULT_PARAMETERS.seconds = 1000
 
 # Setup the matrices for the operation
 # We declare these as "cost" so they are not treated as globals
 # Alternatively, we could have used interpolation here.
-const A = CUDA.randn(Float64, (M, N))
+const A = randn(Float64, (M, N))
 
-# Perform Matrix Multiplication AxA'
-benchmark_data = @benchmark CUDA.@sync(A*A')
+# Perform the Matrix Multiplication AxA'
+benchmark_data = @benchmark A*A'
 
 # Times are in nano-seconds (ns) which are converted to seconds
 sample_times = benchmark_data.times
 sample_times /= 10^9
 
-@printf "GPU results:\n"
+@printf "CPU results:\n"
 @printf "Minimum (s): %.8e\n" minimum(sample_times)
 @printf "Maximum (s): %.8e\n" maximum(sample_times)
 @printf "Median (s): %.8e\n" median(sample_times)

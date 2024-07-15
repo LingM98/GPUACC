@@ -1,0 +1,144 @@
+
+Options used for MM (CPU):
+  M  =  256
+  N  =  256
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 3.39136000e-04
+Maximum (s): 1.33401800e-03
+Median (s): 4.22286500e-04
+Mean (s): 5.15155550e-04
+Standard deviation (s): 2.35482468e-04
+
+Options used for MM (GPU):
+  M  =  256
+  N  =  256
+  s  =  20
+GPU results:
+Minimum (s): 3.41960000e-05
+Maximum (s): 4.65599000e-04
+Median (s): 3.56595000e-05
+Mean (s): 6.20523000e-05
+Standard deviation (s): 9.67491892e-05
+
+
+Options used for MM (CPU):
+  M  =  512
+  N  =  512
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 1.48691400e-03
+Maximum (s): 7.27507900e-03
+Median (s): 1.91106300e-03
+Mean (s): 2.46533195e-03
+Standard deviation (s): 1.38024934e-03
+
+Options used for MM (GPU):
+  M  =  512
+  N  =  512
+  s  =  20
+GPU results:
+Minimum (s): 4.73520000e-05
+Maximum (s): 1.95307000e-04
+Median (s): 4.86390000e-05
+Mean (s): 6.07142500e-05
+Standard deviation (s): 3.62850317e-05
+
+
+Options used for MM (CPU):
+  M  =  1024
+  N  =  1024
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 5.96940700e-03
+Maximum (s): 1.23665610e-02
+Median (s): 6.41478700e-03
+Mean (s): 7.69945815e-03
+Standard deviation (s): 2.12095866e-03
+
+Options used for MM (GPU):
+  M  =  1024
+  N  =  1024
+  s  =  20
+GPU results:
+Minimum (s): 1.51964000e-04
+Maximum (s): 3.75306000e-04
+Median (s): 1.53080500e-04
+Mean (s): 1.69346450e-04
+Standard deviation (s): 5.24252005e-05
+
+
+Options used for MM (CPU):
+  M  =  2048
+  N  =  2048
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 2.94496320e-02
+Maximum (s): 3.73850260e-02
+Median (s): 3.14679835e-02
+Mean (s): 3.21824220e-02
+Standard deviation (s): 2.12391143e-03
+
+Options used for MM (GPU):
+  M  =  2048
+  N  =  2048
+  s  =  20
+GPU results:
+Minimum (s): 9.90623000e-04
+Maximum (s): 1.11410200e-03
+Median (s): 9.96619500e-04
+Mean (s): 1.00695750e-03
+Standard deviation (s): 3.13058509e-05
+
+
+Options used for MM (CPU):
+  M  =  4096
+  N  =  4096
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 3.44047410e-01
+Maximum (s): 3.61213602e-01
+Median (s): 3.48749463e-01
+Mean (s): 3.49815612e-01
+Standard deviation (s): 4.26972683e-03
+
+Options used for MM (GPU):
+  M  =  4096
+  N  =  4096
+  s  =  20
+GPU results:
+Minimum (s): 7.19355600e-03
+Maximum (s): 7.52890500e-03
+Median (s): 7.31842800e-03
+Mean (s): 7.35333900e-03
+Standard deviation (s): 1.32965061e-04
+
+
+Options used for MM (CPU):
+  M  =  8192
+  N  =  8192
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 2.35679573e+00
+Maximum (s): 2.39014597e+00
+Median (s): 2.37118978e+00
+Mean (s): 2.37272297e+00
+Standard deviation (s): 1.03774526e-02
+
+Options used for MM (GPU):
+  M  =  8192
+  N  =  8192
+  s  =  20
+GPU results:
+Minimum (s): 5.91269660e-02
+Maximum (s): 6.61947630e-02
+Median (s): 6.31032945e-02
+Mean (s): 6.29731730e-02
+Standard deviation (s): 1.53621478e-03
+

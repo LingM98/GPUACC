@@ -1,0 +1,66 @@
+using CUDA
+using Plots
+using BenchmarkTools
+using LinearAlgebra
+
+
+function HvdGraph(N, C, func)
+    timesGPU = TestGPU(N, C, func)
+    timesCPU = TestCPU(N, C, func)
+    
+    #---------------------------------------------------------------------------------------#
+    x_pos = maximum(N) * 0.95  # Adjust to position the text within the plot area
+    y_pos = minimum(timesGPU) * 1.05  # Adjust based on the minimum time value
+    
+    cpu_info = Sys.cpu_info()[1].model  # Display device name
+    gpu_info = CUDA.name(CUDA.device())  # Display device name
+    #---------------------------------------------------------------------------------------#
+    
+    p1 = plot(N, timesGPU, title="Time vs Matrix Size in Function Execution", 
+              xlabel="Input Size (N)", xaxis=:log, ylabel="Time (ms)", yaxis=:log, 
+              label="GPU", marker=:circle, legend=:topright, grid=:on, minorgrid=true)
+    plot!(p1, N, timesCPU, label="CPU", marker=:circle)
+    annotate!(p1, [(x_pos, y_pos, text("CPU: $cpu_info\nGPU: $gpu_info", 8, :right, :bottom))])
+    
+    display(p1)
+end
+
+function TestGPU(N::Vector{Int}, C::Int, func::Function)
+    Time = zeros(Float64, length(N))
+
+    # Set the number of samples for benchmarking
+    BenchmarkTools.DEFAULT_PARAMETERS.samples = C
+
+    for (i, a) in enumerate(N)
+        @show (i, a)
+        
+        # Benchmark the function with the given input size
+        data = @benchmark CUDA.@sync $func($a)
+        
+        # Store the mean time in milliseconds
+        Time[i] = mean(data.times) / 1e6  # Convert to milliseconds
+    end
+
+    return Time
+end
+
+function TestCPU(N::Vector{Int}, C::Int, func::Function)
+    Time = zeros(Float64, length(N))
+
+    # Set the number of samples for benchmarking
+    BenchmarkTools.DEFAULT_PARAMETERS.samples = C
+
+    for (i, a) in enumerate(N)
+        @show (i, a)
+        
+        # Benchmark the function with the given input size
+        data = @benchmark $func($a)
+        
+        # Store the mean time in milliseconds
+        Time[i] = mean(data.times) / 1e6  # Convert to milliseconds
+    end
+
+    return Time
+end
+
+

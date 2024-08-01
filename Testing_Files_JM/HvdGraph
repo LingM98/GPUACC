@@ -34,8 +34,9 @@ function TestGPU(N::Vector{Int}, C::Int, func::Function)
     for (i, a) in enumerate(N)
         @show (i, a)
         
+        X = CUDA.randn(Float64, a, a)
         # Benchmark the function with the given input size
-        data = @benchmark CUDA.@sync $func($a)
+        data = @benchmark CUDA.@sync $func($X)
         
         # Store the mean time in milliseconds
         Time[i] = mean(data.times) / 1e6  # Convert to milliseconds
@@ -53,8 +54,9 @@ function TestCPU(N::Vector{Int}, C::Int, func::Function)
     for (i, a) in enumerate(N)
         @show (i, a)
         
+        X = randn(Float64, a, a)
         # Benchmark the function with the given input size
-        data = @benchmark $func($a)
+        data = @benchmark $func($X)
         
         # Store the mean time in milliseconds
         Time[i] = mean(data.times) / 1e6  # Convert to milliseconds
@@ -62,5 +64,4 @@ function TestCPU(N::Vector{Int}, C::Int, func::Function)
 
     return Time
 end
-
 

@@ -3,25 +3,29 @@
 #SBATCH --job-name=svd_benchmark # Job name
 #SBATCH --output=svd_data.out # Standard output file
 #SBATCH --error=svd_error.out # Standard error file
-#SBATCH --partition=amd20-v100 # Partition or queue name
+#SBATCH --qos=regular # Quality of service (QOS) or queue
+#SBATCH --account=m4296 # Account for the allocation
 #SBATCH --nodes=1 # Number of nodes
 #SBATCH --ntasks=1 # Number of tasks
-#SBATCH --cpus-per-task=48 # Number of CPU cores per task
+#SBATCH --cpus-per-task=64 # Number of CPU cores per task
+#SBATCH --constraint=gpu
 #SBATCH --gpus=1 # Number of GPUs to use in this example
 #SBATCH --exclusive # Request exlusive use of the resources
-#SBATCH --mem=32GB
-#SBATCH --time=0-01:00:00 # Maximum runtime (D-HH:MM:SS)
+#SBATCH --time=0-02:00:00 # Maximum runtime (D-HH:MM:SS)
 #SBATCH --mail-type=END # Send email at job completion
 #SBATCH --mail-user=wsands@udel.edu # Email address for notifications
 
+# Move to the directory where the code is located
+cd ~/Projects/GPUACC/SVD
+
 # Load packages
-module load Julia/1.9.3-linux-x86_64
+module load julia
 
 # Create the matrix sizes to use in the runs
 N_list="256 512 1024 2048 4096 8192"
 
 # Use at least 10 repetitions for each case
-num_reps=20
+num_reps=10
 
 # Alternate between the CPU and GPU examples
 for N in $N_list

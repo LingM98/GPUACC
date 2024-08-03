@@ -6,6 +6,7 @@ using ArgParse
 using Printf
 using BenchmarkTools
 using CUDA
+using LinearAlgebra
 
 # Retrieve the command line arguments
 s = ArgParseSettings()

@@ -5,6 +5,7 @@ using ArgParse
 using Printf
 using BenchmarkTools
 using CUDA
+using LinearAlgebra
 
 # Retrieve the command line arguments
 s = ArgParseSettings()
@@ -38,6 +39,6 @@ N = parsed_args["N"]
 const A = CUDA.randn(Float64, (M, N))
 
 # Perform the SVD factorization A = USV'
-CUDA.@profile CUDA.@sync CUDA.svd(A)
+CUDA.@profile CUDA.@sync svd(A)
 
 

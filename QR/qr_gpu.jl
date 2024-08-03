@@ -5,6 +5,7 @@ using ArgParse
 using Printf
 using BenchmarkTools
 using CUDA
+using LinearAlgebra
 
 # Retrieve the command line arguments
 s = ArgParseSettings()
@@ -48,7 +49,7 @@ BenchmarkTools.DEFAULT_PARAMETERS.seconds = 120
 const A = CUDA.randn(Float64, (M, N))
 
 # Perform the QR factorization A = qr
-benchmark_data = @benchmark CUDA.@sync CUDA.qr(A)
+benchmark_data = @benchmark CUDA.@sync qr(A)
 
 # Times are in nano-seconds (ns) which are converted to seconds
 sample_times = benchmark_data.times

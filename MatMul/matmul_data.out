@@ -1,0 +1,156 @@
+
+Options used for MatMul (CPU):
+  M  =  256
+  N  =  256
+  L  =  256
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 6.39978000e-04
+Maximum (s): 9.34647000e-04
+Median (s): 6.74403500e-04
+Mean (s): 7.04926300e-04
+Standard deviation (s): 7.72166245e-05
+
+Options used for MatMul (GPU):
+  M  =  256
+  N  =  256
+  L  =  256
+  s  =  20
+GPU results:
+Minimum (s): 3.04990000e-05
+Maximum (s): 1.31144000e-04
+Median (s): 3.34045000e-05
+Mean (s): 4.23213000e-05
+Standard deviation (s): 2.68660321e-05
+
+
+Options used for MatMul (CPU):
+  M  =  512
+  N  =  512
+  L  =  256
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 6.35609000e-04
+Maximum (s): 4.49111300e-03
+Median (s): 6.77985500e-04
+Mean (s): 9.15148300e-04
+Standard deviation (s): 8.58826941e-04
+
+Options used for MatMul (GPU):
+  M  =  512
+  N  =  512
+  L  =  256
+  s  =  20
+GPU results:
+Minimum (s): 3.80430000e-05
+Maximum (s): 1.43267000e-04
+Median (s): 3.89050000e-05
+Mean (s): 4.87190500e-05
+Standard deviation (s): 2.89770695e-05
+
+
+Options used for MatMul (CPU):
+  M  =  1024
+  N  =  1024
+  L  =  256
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 1.13056600e-03
+Maximum (s): 1.75418530e-02
+Median (s): 1.30513800e-03
+Mean (s): 3.99397055e-03
+Standard deviation (s): 5.41409280e-03
+
+Options used for MatMul (GPU):
+  M  =  1024
+  N  =  1024
+  L  =  256
+  s  =  20
+GPU results:
+Minimum (s): 6.72400000e-05
+Maximum (s): 1.70099000e-04
+Median (s): 6.84320000e-05
+Mean (s): 7.74134000e-05
+Standard deviation (s): 2.69430805e-05
+
+
+Options used for MatMul (CPU):
+  M  =  2048
+  N  =  2048
+  L  =  256
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 1.10721560e-02
+Maximum (s): 1.55280170e-02
+Median (s): 1.19445025e-02
+Mean (s): 1.22957553e-02
+Standard deviation (s): 1.12811736e-03
+
+Options used for MatMul (GPU):
+  M  =  2048
+  N  =  2048
+  L  =  256
+  s  =  20
+GPU results:
+Minimum (s): 1.62434000e-04
+Maximum (s): 2.82345000e-04
+Median (s): 1.63836500e-04
+Mean (s): 1.74436950e-04
+Standard deviation (s): 3.00822179e-05
+
+
+Options used for MatMul (CPU):
+  M  =  4096
+  N  =  4096
+  L  =  256
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 2.14128680e-02
+Maximum (s): 3.21509400e-02
+Median (s): 2.93209505e-02
+Mean (s): 2.88775338e-02
+Standard deviation (s): 2.14532698e-03
+
+Options used for MatMul (GPU):
+  M  =  4096
+  N  =  4096
+  L  =  256
+  s  =  20
+GPU results:
+Minimum (s): 5.73558000e-04
+Maximum (s): 6.67510000e-04
+Median (s): 5.75794000e-04
+Mean (s): 5.85269950e-04
+Standard deviation (s): 2.61360662e-05
+
+
+Options used for MatMul (CPU):
+  M  =  8192
+  N  =  8192
+  L  =  256
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 6.51944700e-02
+Maximum (s): 8.00493430e-02
+Median (s): 7.59587195e-02
+Mean (s): 7.53206569e-02
+Standard deviation (s): 3.32344850e-03
+
+Options used for MatMul (GPU):
+  M  =  8192
+  N  =  8192
+  L  =  256
+  s  =  20
+GPU results:
+Minimum (s): 2.08857600e-03
+Maximum (s): 2.17717600e-03
+Median (s): 2.09685650e-03
+Mean (s): 2.10269035e-03
+Standard deviation (s): 2.29266885e-05
+

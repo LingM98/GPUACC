@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH --job-name=matmul_benchmark # Job name
-#SBATCH --output=matmul_data.out # Standard output file
-#SBATCH --error=matmul_error.out # Standard error file
+#SBATCH --job-name=eigen_benchmark # Job name
+#SBATCH --output=eigen_data.out # Standard output file
+#SBATCH --error=eigen_error.out # Standard error file
 #SBATCH --qos=regular # Quality of service (QOS) or queue
 #SBATCH --account=m4296 # Account for the allocation
 #SBATCH --nodes=1 # Number of nodes
@@ -11,12 +11,12 @@
 #SBATCH --constraint=gpu
 #SBATCH --gpus=1 # Number of GPUs to use in this example
 #SBATCH --exclusive # Request exlusive use of the resources
-#SBATCH --time=0-01:00:00 # Maximum runtime (D-HH:MM:SS)
+#SBATCH --time=0-02:00:00 # Maximum runtime (D-HH:MM:SS)
 #SBATCH --mail-type=END # Send email at job completion
 #SBATCH --mail-user=wsands@udel.edu # Email address for notifications
 
 # Move to the directory where the code is located
-cd ~/Projects/GPUACC/MatMul
+cd ~/Projects/GPUACC/Eigen
 
 # Load packages
 module load julia
@@ -25,15 +25,17 @@ module load julia
 N_list="256 512 1024 2048 4096 8192"
 
 # Use at least 10 repetitions for each case
-num_reps=20
+num_reps=10
+
+use_symmetric=false
 
 # Alternate between the CPU and GPU examples
 for N in $N_list
 do
 	printf "\n"
-    julia matmul_cpu.jl -M=$N -N=$N -s=$num_reps 
+    julia eigen_cpu.jl -N=$N -s=$num_reps --symmetric=$use_symmetric 
 	printf "\n"
-    julia matmul_gpu.jl -M=$N -N=$N -s=$num_reps
+    julia eigen_gpu.jl -N=$N -s=$num_reps --symmetric=$use_symmetric
 	printf "\n"
 done
 

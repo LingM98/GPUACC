@@ -1,0 +1,138 @@
+
+Options used for QR (CPU):
+  M  =  256
+  N  =  256
+  s  =  20
+CPU results:
+Minimum (s): 4.50853000e-03
+Maximum (s): 5.29789900e-03
+Median (s): 4.52747750e-03
+Mean (s): 4.58142265e-03
+Standard deviation (s): 1.80752647e-04
+
+Options used for QR (GPU):
+  M  =  256
+  N  =  256
+  s  =  20
+GPU results:
+Minimum (s): 1.05833900e-03
+Maximum (s): 1.48893400e-03
+Median (s): 1.07028800e-03
+Mean (s): 1.09406025e-03
+Standard deviation (s): 9.44738129e-05
+
+
+Options used for QR (CPU):
+  M  =  512
+  N  =  512
+  s  =  20
+CPU results:
+Minimum (s): 1.46761710e-02
+Maximum (s): 1.92100410e-02
+Median (s): 1.52559190e-02
+Mean (s): 1.54162549e-02
+Standard deviation (s): 9.60107330e-04
+
+Options used for QR (GPU):
+  M  =  512
+  N  =  512
+  s  =  20
+GPU results:
+Minimum (s): 2.50189500e-03
+Maximum (s): 3.04856400e-03
+Median (s): 2.51880300e-03
+Mean (s): 2.54872320e-03
+Standard deviation (s): 1.19283346e-04
+
+
+Options used for QR (CPU):
+  M  =  1024
+  N  =  1024
+  s  =  20
+CPU results:
+Minimum (s): 4.15758980e-02
+Maximum (s): 4.72567170e-02
+Median (s): 4.23321245e-02
+Mean (s): 4.28643414e-02
+Standard deviation (s): 1.39067351e-03
+
+Options used for QR (GPU):
+  M  =  1024
+  N  =  1024
+  s  =  20
+GPU results:
+Minimum (s): 6.01739900e-03
+Maximum (s): 6.46320000e-03
+Median (s): 6.03656550e-03
+Mean (s): 6.05981795e-03
+Standard deviation (s): 9.65449997e-05
+
+
+Options used for QR (CPU):
+  M  =  2048
+  N  =  2048
+  s  =  20
+CPU results:
+Minimum (s): 2.71527967e-01
+Maximum (s): 2.90615427e-01
+Median (s): 2.83812307e-01
+Mean (s): 2.83516100e-01
+Standard deviation (s): 5.10062334e-03
+
+Options used for QR (GPU):
+  M  =  2048
+  N  =  2048
+  s  =  20
+GPU results:
+Minimum (s): 1.49671750e-02
+Maximum (s): 1.51800470e-02
+Median (s): 1.50365790e-02
+Mean (s): 1.50460070e-02
+Standard deviation (s): 4.39361901e-05
+
+
+Options used for QR (CPU):
+  M  =  4096
+  N  =  4096
+  s  =  20
+CPU results:
+Minimum (s): 1.86764185e+00
+Maximum (s): 1.91540471e+00
+Median (s): 1.89897466e+00
+Mean (s): 1.89372075e+00
+Standard deviation (s): 1.40818659e-02
+
+Options used for QR (GPU):
+  M  =  4096
+  N  =  4096
+  s  =  20
+GPU results:
+Minimum (s): 4.97195980e-02
+Maximum (s): 5.00632930e-02
+Median (s): 4.98517440e-02
+Mean (s): 4.98597773e-02
+Standard deviation (s): 9.08081274e-05
+
+
+Options used for QR (CPU):
+  M  =  8192
+  N  =  8192
+  s  =  20
+CPU results:
+Minimum (s): 1.14364798e+01
+Maximum (s): 1.15434531e+01
+Median (s): 1.14955722e+01
+Mean (s): 1.14963476e+01
+Standard deviation (s): 2.67107916e-02
+
+Options used for QR (GPU):
+  M  =  8192
+  N  =  8192
+  s  =  20
+GPU results:
+Minimum (s): 1.79721749e-01
+Maximum (s): 1.80804867e-01
+Median (s): 1.80204218e-01
+Mean (s): 1.80188095e-01
+Standard deviation (s): 2.97069510e-04
+

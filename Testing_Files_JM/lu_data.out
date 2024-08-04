@@ -23,3 +23,122 @@ Mean (s): 5.32788100e-04
 Standard deviation (s): 2.61563058e-05
 
 
+Options used for LU (CPU):
+  M  =  512
+  N  =  512
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 7.30919500e-03
+Maximum (s): 8.67324200e-03
+Median (s): 8.11281350e-03
+Mean (s): 8.09267955e-03
+Standard deviation (s): 5.38522088e-04
+
+Options used for LU (GPU):
+  M  =  512
+  N  =  512
+  s  =  20
+GPU results:
+Minimum (s): 1.22792300e-03
+Maximum (s): 1.61038200e-03
+Median (s): 1.25302700e-03
+Mean (s): 1.26893020e-03
+Standard deviation (s): 8.15769501e-05
+
+
+Options used for LU (CPU):
+  M  =  1024
+  N  =  1024
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 2.21323310e-02
+Maximum (s): 2.79446130e-02
+Median (s): 2.48998935e-02
+Mean (s): 2.47337250e-02
+Standard deviation (s): 2.02423652e-03
+
+Options used for LU (GPU):
+  M  =  1024
+  N  =  1024
+  s  =  20
+GPU results:
+Minimum (s): 2.80695400e-03
+Maximum (s): 3.13355500e-03
+Median (s): 2.84106550e-03
+Mean (s): 2.85464300e-03
+Standard deviation (s): 6.74594624e-05
+
+
+Options used for LU (CPU):
+  M  =  2048
+  N  =  2048
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 1.12051152e-01
+Maximum (s): 1.98124671e-01
+Median (s): 1.25931746e-01
+Mean (s): 1.30890249e-01
+Standard deviation (s): 2.20985255e-02
+
+Options used for LU (GPU):
+  M  =  2048
+  N  =  2048
+  s  =  20
+GPU results:
+Minimum (s): 7.29687100e-03
+Maximum (s): 7.44669100e-03
+Median (s): 7.33361300e-03
+Mean (s): 7.34010375e-03
+Standard deviation (s): 3.21251667e-05
+
+
+Options used for LU (CPU):
+  M  =  4096
+  N  =  4096
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 7.88160342e-01
+Maximum (s): 8.94977292e-01
+Median (s): 8.14157886e-01
+Mean (s): 8.21873505e-01
+Standard deviation (s): 2.84917976e-02
+
+Options used for LU (GPU):
+  M  =  4096
+  N  =  4096
+  s  =  20
+GPU results:
+Minimum (s): 1.94099680e-02
+Maximum (s): 1.95123050e-02
+Median (s): 1.94776690e-02
+Mean (s): 1.94775579e-02
+Standard deviation (s): 2.98623761e-05
+
+
+Options used for LU (CPU):
+  M  =  8192
+  N  =  8192
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 3.57283969e+00
+Maximum (s): 3.71536291e+00
+Median (s): 3.62923384e+00
+Mean (s): 3.62860922e+00
+Standard deviation (s): 3.87598173e-02
+
+Options used for LU (GPU):
+  M  =  8192
+  N  =  8192
+  s  =  20
+GPU results:
+Minimum (s): 6.41712610e-02
+Maximum (s): 6.46453070e-02
+Median (s): 6.43772385e-02
+Mean (s): 6.43740082e-02
+Standard deviation (s): 1.22800195e-04
+

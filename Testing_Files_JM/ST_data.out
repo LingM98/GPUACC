@@ -1,0 +1,63 @@
+
+Options used for BandSpeedTest:
+  M  =  2
+  N  =  2
+  s  =  20
+Number of BLAS threads:64
+
+
+Options used for BandSpeedTest:
+  M  =  4
+  N  =  4
+  s  =  20
+Number of BLAS threads:64
+
+
+Options used for BandSpeedTest:
+  M  =  8
+  N  =  8
+  s  =  20
+Number of BLAS threads:64
+
+
+Options used for BandSpeedTest:
+  M  =  16
+  N  =  16
+  s  =  20
+Number of BLAS threads:64
+
+
+Options used for BandSpeedTest:
+  M  =  32
+  N  =  32
+  s  =  20
+Number of BLAS threads:64
+
+
+Options used for BandSpeedTest:
+  M  =  64
+  N  =  64
+  s  =  20
+Number of BLAS threads:64
+
+
+Options used for BandSpeedTest:
+  M  =  128
+  N  =  128
+  s  =  20
+Number of BLAS threads:64
+
+
+Options used for BandSpeedTest:
+  M  =  256
+  N  =  256
+  s  =  20
+Number of BLAS threads:64
+
+
+Options used for BandSpeedTest:
+  M  =  512
+  N  =  512
+  s  =  20
+Number of BLAS threads:64
+

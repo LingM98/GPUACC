@@ -1,0 +1,25 @@
+
+Options used for LU (CPU):
+  M  =  256
+  N  =  256
+  s  =  20
+Number of BLAS threads:64
+CPU results:
+Minimum (s): 2.45478400e-03
+Maximum (s): 2.99391500e-03
+Median (s): 2.60862600e-03
+Mean (s): 2.61865555e-03
+Standard deviation (s): 9.91899666e-05
+
+Options used for LU (GPU):
+  M  =  256
+  N  =  256
+  s  =  20
+GPU results:
+Minimum (s): 5.15737000e-04
+Maximum (s): 6.24557000e-04
+Median (s): 5.25385500e-04
+Mean (s): 5.32788100e-04
+Standard deviation (s): 2.61563058e-05
+
+

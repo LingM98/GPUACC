@@ -22,7 +22,7 @@ cd ~/Testing1/GPUACC/Krylov_low-rank/original_solver/
 # module load julia
 
 # Create the matrix sizes to use in the runs
-N_list="512 2048 8192"
+N_list="256 512 1024 2048 4096 8192"
 
 # Use at least 10 repetitions for each case
 num_reps=20

@@ -2,6 +2,45 @@
 Options used:
   Ly  =  1.0
   Lx  =  1.0
+  Nx  =  256
+  max_rank  =  32
+  max_iter  =  20
+  Ny  =  256
+  rel_tol  =  0.001
+  use_mkl  =  false
+Running with the default OpenBLAS installation.
+Number of BLAS threads:64
+BLAS config:LBTConfig([ILP64] libopenblas64_.so)
+CPU results:
+Minimum (s): 2.19723500e-03
+Maximum (s): 2.70327600e-03
+Median (s): 2.22255450e-03
+Mean (s): 2.27591380e-03
+Standard deviation (s): 1.53555787e-04
+
+Options used:
+  Ly  =  1.0
+  Lx  =  1.0
+  Nx  =  256
+  max_rank  =  32
+  max_iter  =  20
+  Ny  =  256
+  rel_tol  =  0.001
+  use_mkl  =  false
+Running with the default OpenBLAS installation.
+Number of BLAS threads:64
+BLAS config:LBTConfig([ILP64] libopenblas64_.so)
+GPU results:
+Minimum (s): 3.02261150e-02
+Maximum (s): 1.61854007e-01
+Median (s): 8.41529205e-02
+Mean (s): 8.75793541e-02
+Standard deviation (s): 4.10163769e-02
+
+
+Options used:
+  Ly  =  1.0
+  Lx  =  1.0
   Nx  =  512
   max_rank  =  32
   max_iter  =  20
@@ -12,11 +51,11 @@ Running with the default OpenBLAS installation.
 Number of BLAS threads:64
 BLAS config:LBTConfig([ILP64] libopenblas64_.so)
 CPU results:
-Minimum (s): 3.48830300e-03
-Maximum (s): 3.74896800e-03
-Median (s): 3.60997400e-03
-Mean (s): 3.60582500e-03
-Standard deviation (s): 1.07636436e-04
+Minimum (s): 3.46882400e-03
+Maximum (s): 3.80875100e-03
+Median (s): 3.48319650e-03
+Mean (s): 3.53779900e-03
+Standard deviation (s): 1.21189424e-04
 
 Options used:
   Ly  =  1.0
@@ -31,11 +70,50 @@ Running with the default OpenBLAS installation.
 Number of BLAS threads:64
 BLAS config:LBTConfig([ILP64] libopenblas64_.so)
 GPU results:
-Minimum (s): 2.74728240e-02
-Maximum (s): 1.51085305e-01
-Median (s): 6.72090030e-02
-Mean (s): 7.61126319e-02
-Standard deviation (s): 3.77397172e-02
+Minimum (s): 2.99508360e-02
+Maximum (s): 1.41701749e-01
+Median (s): 6.92178185e-02
+Mean (s): 7.83813150e-02
+Standard deviation (s): 3.84307676e-02
+
+
+Options used:
+  Ly  =  1.0
+  Lx  =  1.0
+  Nx  =  1024
+  max_rank  =  32
+  max_iter  =  20
+  Ny  =  1024
+  rel_tol  =  0.001
+  use_mkl  =  false
+Running with the default OpenBLAS installation.
+Number of BLAS threads:64
+BLAS config:LBTConfig([ILP64] libopenblas64_.so)
+CPU results:
+Minimum (s): 1.56091530e-02
+Maximum (s): 1.75233870e-02
+Median (s): 1.58285825e-02
+Mean (s): 1.61914005e-02
+Standard deviation (s): 7.51774524e-04
+
+Options used:
+  Ly  =  1.0
+  Lx  =  1.0
+  Nx  =  1024
+  max_rank  =  32
+  max_iter  =  20
+  Ny  =  1024
+  rel_tol  =  0.001
+  use_mkl  =  false
+Running with the default OpenBLAS installation.
+Number of BLAS threads:64
+BLAS config:LBTConfig([ILP64] libopenblas64_.so)
+GPU results:
+Minimum (s): 4.88644100e-02
+Maximum (s): 1.70511350e-01
+Median (s): 9.56274440e-02
+Mean (s): 1.08030480e-01
+Standard deviation (s): 4.16725274e-02
 
 
 Options used:
@@ -51,11 +129,11 @@ Running with the default OpenBLAS installation.
 Number of BLAS threads:64
 BLAS config:LBTConfig([ILP64] libopenblas64_.so)
 CPU results:
-Minimum (s): 1.77087540e-02
-Maximum (s): 2.04516420e-02
-Median (s): 1.81254260e-02
-Mean (s): 1.84651651e-02
-Standard deviation (s): 8.78697727e-04
+Minimum (s): 1.77439420e-02
+Maximum (s): 1.97092560e-02
+Median (s): 1.81832330e-02
+Mean (s): 1.84711169e-02
+Standard deviation (s): 7.00690156e-04
 
 Options used:
   Ly  =  1.0
@@ -70,48 +148,49 @@ Running with the default OpenBLAS installation.
 Number of BLAS threads:64
 BLAS config:LBTConfig([ILP64] libopenblas64_.so)
 GPU results:
-Minimum (s): 4.16610000e-02
-Maximum (s): 1.67519698e-01
-Median (s): 7.62148545e-02
-Mean (s): 8.65687894e-02
-Standard deviation (s): 3.68453065e-02
+Minimum (s): 4.47469930e-02
+Maximum (s): 1.66101789e-01
+Median (s): 8.22337170e-02
+Mean (s): 9.05416763e-02
+Standard deviation (s): 3.30907891e-02
 
 
 Options used:
   Ly  =  1.0
   Lx  =  1.0
-  Nx  =  8192
+  Nx  =  4096
   max_rank  =  32
   max_iter  =  20
-  Ny  =  8192
+  Ny  =  4096
   rel_tol  =  0.001
   use_mkl  =  false
 Running with the default OpenBLAS installation.
 Number of BLAS threads:64
 BLAS config:LBTConfig([ILP64] libopenblas64_.so)
 CPU results:
-Minimum (s): 1.04909556e-01
-Maximum (s): 1.07353356e-01
-Median (s): 1.05292499e-01
-Mean (s): 1.05603441e-01
-Standard deviation (s): 8.20673993e-04
+Minimum (s): 5.65883430e-02
+Maximum (s): 6.00283310e-02
+Median (s): 5.82128725e-02
+Mean (s): 5.82128595e-02
+Standard deviation (s): 1.17022751e-03
 
 Options used:
   Ly  =  1.0
   Lx  =  1.0
-  Nx  =  8192
+  Nx  =  4096
   max_rank  =  32
   max_iter  =  20
-  Ny  =  8192
+  Ny  =  4096
   rel_tol  =  0.001
   use_mkl  =  false
 Running with the default OpenBLAS installation.
 Number of BLAS threads:64
 BLAS config:LBTConfig([ILP64] libopenblas64_.so)
 GPU results:
-Minimum (s): 2.41219834e-01
-Maximum (s): 3.44492577e-01
-Median (s): 2.81575181e-01
-Mean (s): 2.84470041e-01
-Standard deviation (s): 3.53246441e-02
+Minimum (s): 1.15774722e-01
+Maximum (s): 2.50623656e-01
+Median (s): 1.69141643e-01
+Mean (s): 1.79487005e-01
+Standard deviation (s): 4.37516376e-02
+
 
